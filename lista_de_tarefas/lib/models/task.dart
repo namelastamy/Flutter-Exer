@@ -1,9 +1,11 @@
+//Classe do Obejeto
 class Task {
   int id;
   String title;
   String description;
   bool isDone;
 
+//Construtores
   Task({
     this.id,
     this.title,
@@ -11,6 +13,7 @@ class Task {
     this.isDone,
   });
 
+//metodo da clase que armazena os atributos da lista
   factory Task.fromMap(Map<String, dynamic> json) => new Task(
         id: json["id"],
         title: json["title"],
